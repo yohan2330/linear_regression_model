@@ -7,20 +7,26 @@ This project predicts the number of student dropouts in Nigeria for a given Stat
 Source: `nigerian_education_dropout_rates.csv` — a synthetic dataset of 150,000 individual student dropout records across 37 Nigerian States, 6 grade levels (JSS 1 to SSS 3), and 8 dropout reasons, spanning 2022–2025. The raw data is aggregated by State, grade, year, and month to create `dropout_count`, the continuous regression target.
 
 ## Project Structure
+
 linear_regression_model/
 ├── summative/
 │   ├── linear_regression/
-│   │   ├── multivariate.ipynb      # Data exploration, feature engineering, model training
-│   │   ├── best_model.pkl          # Saved Random Forest model
-│   │   └── scaler.pkl              # Saved StandardScaler
+│   │   ├── multivariate.ipynb
+│   │   ├── best_model.pkl
+│   │   └── scaler.pkl
+│   │
 │   ├── API/
-│   │   ├── prediction.py           # FastAPI application: /predict and /retrain endpoints
-│   │   └── requirements.txt        # Python dependencies
+│   │   ├── prediction.py
+│   │   └── requirements.txt
+│   │
 │   └── FlutterApp/
-│       └── lib/
-│           └── main.dart           # Flutter mobile app
+│       ├── lib/
+│       └── main.dart
+│
 ├── pyproject.toml
-└── uv.lock
+├── uv.lock
+└── README.md
+```
 
 ### Steps
 1. Clone the repository:
