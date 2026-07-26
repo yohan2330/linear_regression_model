@@ -8,17 +8,17 @@ Source: `nigerian_education_dropout_rates.csv` — a synthetic dataset of 150,00
 
 ## Project Structure
 linear_regression_model/
-├── summative/
-│ ├── linear_regression/
-│ │ ├── multivariate.ipynb # Data exploration, feature engineering, model training
-│ │ ├── best_model.pkl # Saved Random Forest model
-│ │ └── scaler.pkl # Saved StandardScaler
-│ ├── API/
-│ │ ├── prediction.py # FastAPI app: /predict and /retrain endpoints
-│ │ └── requirements.txt
-│ └── FlutterApp/ # Mobile app (single-page prediction UI)
-├── pyproject.toml
-└── uv.lock
+    summative/
+        linear_regression/
+            multivariate.ipynb    (data exploration, feature engineering, model training)
+            best_model.pkl        (saved Random Forest model)
+            scaler.pkl             (saved StandardScaler)
+        API/
+            prediction.py          (FastAPI application: /predict and /retrain endpoints)
+            requirements.txt
+        FlutterApp/                (mobile app: single-page prediction UI)
+    pyproject.toml
+    uv.lock
 
 ### Steps
 1. Clone the repository:
