@@ -57,7 +57,7 @@ Select your Android device/emulator from the list when prompted.
 The app has a single page with six input fields (State, grade, year, month, female ratio, dominant reason), a **Predict** button, and a result display area. It calls the live API above — no local backend needed.
 
 ## API Endpoint
-
+**Public URL:** https://linear-regression-model-6sm2.onrender.com/predict
 **Swagger UI Documentation:** https://linear-regression-model-6sm2.onrender.com/docs
 - `POST /predict` — takes State, grade, year, month, female ratio, and dominant reason, returns the predicted dropout count.
 - `POST /retrain` — accepts a new raw CSV in the original format and retrains the model on updated data.
